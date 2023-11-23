@@ -15,7 +15,7 @@ pipeline {
             steps {
                 sh """
                 cd Simple-Project/
-                ansible-playbook ansible-playbook.yml
+                docker build -t test .
                 """
             }
         }
